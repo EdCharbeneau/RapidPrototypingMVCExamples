@@ -1,0 +1,13 @@
+﻿<p class="text-right">
+    @if (Request.IsAuthenticated)
+    {
+        <text>Welcome <strong>@User.Identity.Name</strong>! [ @Html.ActionLink("Log Off", "LogOff", "Account", new { area = "" })
+        ) ]</text>
+    }
+    else
+    {
+        @:[ @Html.ActionLink("Log On", "LogOn", "Account", new { area = "" }, new { @id="logOn"})]
+    }
+    <a href="@Url.Action("Register", new { area = "", controller = "Account" })" class="small white nice radius button">
+        Register →</a>
+</p>

@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Prototyping.Ipsum</name>
+    </assembly>
+    <members>
+        <member name="M:Prototyping.Ipsum.Ipsum.Words(System.Int32)">
+            <summary>
+            Gets a number of lorem ipsum words with out HTML formatting
+            </summary>
+            <example>To Create: Lorem ipsum dolor sit amet
+            <code>
+            @Html.Ipsum().Words(5)
+            </code>
+            </example>
+            <param name="count">Number of words to create.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.Paragraphs(System.Int32)">
+            <summary>
+            Gets a number of lorem ipsum paragraphs with out HTML formating
+            </summary>
+            <example>
+            To create five paragraphs that will NOT be nested in HTML 'p' tags.
+            <code>
+            @Html.Paragraphs(5)
+            </code>
+            </example>
+            <param name="count">Number of paragraphs to create.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.h1(System.Int32,System.Object)">
+            <summary>
+            Gets an h1 element containing lorem ipsum
+            </summary>
+            <example>To create an HTML h1 tag containing Lorem Ipsum.
+            <code>@Html.h1()</code>
+            </example>
+            <example>To create an HTML h1 tag containing three Lorem Ipsum words and with attributes.
+            <code>@Html.h1(3, new { @class = "my-css-class"})</code>
+            </example>
+            <param name="wordCount">Number of words to create</param>
+            <param name="htmlAttributes">Html attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.h2(System.Int32,System.Object)">
+            <summary>
+            Gets an h2 element containing lorem ipsum
+            </summary>
+            <example>To create an HTML h2 tag containing Lorem Ipsum.
+            <code>@Html.h2()</code>
+            </example>
+            <example>To create an HTML h2 tag containing three Lorem Ipsum words and with attributes.
+            <code>@Html.h2(3, new { @class = "my-css-class"})</code>
+            </example>
+            <param name="wordCount">Number of words to create</param>
+            <param name="htmlAttributes">Html attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.h3(System.Int32,System.Object)">
+            <summary>
+            Gets an h3 element containing lorem ipsum
+            </summary>
+            <example>To create an HTML h3 tag containing Lorem Ipsum.
+            <code>@Html.h3()</code>
+            </example>
+            <example>To create an HTML h3 tag containing three Lorem Ipsum words and with attributes.
+            <code>@Html.h3(3, new { @class = "my-css-class"})</code>
+            </example>
+            <param name="wordCount">Number of words to create</param>
+            <param name="htmlAttributes">Html attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.h4(System.Int32,System.Object)">
+            <summary>
+            Gets an h4 element containing lorem ipsum
+            </summary>
+            <example>To create an HTML h4 tag containing Lorem Ipsum.
+            <code>@Html.h4()</code>
+            </example>
+            <example>To create an HTML h4 tag containing three Lorem Ipsum words and with attributes.
+            <code>@Html.h4(3, new { @class = "my-css-class"})</code>
+            </example>
+            <param name="wordCount">Number of words to create</param>
+            <param name="htmlAttributes">Html attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.h5(System.Int32,System.Object)">
+            <summary>
+            Gets an h5 element containing lorem ipsum
+            </summary>
+            <example>To create an HTML h5 tag containing Lorem Ipsum.
+            <code>@Html.h5()</code>
+            </example>
+            <example>To create an HTML h5 tag containing three Lorem Ipsum words and with attributes.
+            <code>@Html.h5(3, new { @class = "my-css-class"})</code>
+            </example>
+            <param name="wordCount">Number of words to create</param>
+            <param name="htmlAttributes">Html attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.h6(System.Int32,System.Object)">
+            <summary>
+            Gets an h6 element containing lorem ipsum
+            </summary>
+            <example>To create an HTML h6 tag containing Lorem Ipsum.
+            <code>@Html.h6()</code>
+            </example>
+            <example>To create an HTML h6 tag containing three Lorem Ipsum words and with attributes.
+            <code>@Html.h6(3, new { @class = "my-css-class"})</code>
+            </example>
+            <param name="wordCount">Number of words to create</param>
+            <param name="htmlAttributes">Html attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.p(System.Int32,System.Int32,System.Object)">
+            <summary>
+            Gets a p element containing lorem ipsum
+            </summary>
+            <example>To create 3 paragraphs each 6 sentences nested in HTML 'p' tags.
+            <code>@Html.p(3, 6)</code>
+            </example>
+            <param name="paragraphCount"></param>
+            <param name="sentenceCount"></param>
+            <param name="htmlAttributes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.ul(System.Int32,System.Int32,System.Boolean,System.Object,System.Object)">
+            <summary>
+            Gets a ul element containing lorem ipsum
+            </summary>
+            <example>To create a unordered list of Lorem Ipusm nested in HTML 'ul' tags.<code>@Html.ul()</code></example>
+            <param name="listCount">Number of list items to create</param>
+            <param name="wordCount">Number of words to create</param>
+            <param name="links">List item will contain a link, ex: href="#"</param>
+            <param name="ulAttributes">ul element attributes</param>
+            <param name="liAttributes">li element attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.ol(System.Int32,System.Int32,System.Boolean,System.Object,System.Object)">
+            <summary>
+            Gets a ol element containing lorem ipsum
+            </summary>
+            <example>To create a unordered list of Lorem Ipusm nested in HTML 'ol' tags.<code>@Html.ol()</code></example>
+            <param name="listCount">Number of list items to create</param>
+            <param name="wordCount">Number of words to create</param>
+            <param name="links">List item will contain a link, ex: href="#"</param>
+            <param name="olAttributes">ol element attributes</param>
+            <param name="liAttributes">li element attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.dl(System.Int32,System.Int32,System.Boolean,System.Object,System.Object)">
+            <summary>
+            Gets a dl element containing lorem ipsum
+            </summary>
+            <example>To create a unordered list of Lorem Ipusm nested in HTML 'dl' tags.<code>@Html.dl()</code></example>
+            <param name="listCount">Number of list items to create</param>
+            <param name="wordCount">Number of words to create</param>
+            <param name="links">List item will contain a link, ex: href="#"</param>
+            <param name="dlAttributes">dl element attributes</param>
+            <param name="ddAttributes">dd element attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.Ipsum.BlogPost">
+            <summary>
+            Gets a static set of HTML paragraphs that resemble a blog post. (500 words with links and strong tags)
+            </summary>
+            <param name="htmlAttributes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prototyping.Ipsum.IpsumHelper.Ipsum(System.Web.Mvc.HtmlHelper)">
+            <summary>
+            Generates lorem ipsum placeholder text
+            </summary>
+        </member>
+    </members>
+</doc>

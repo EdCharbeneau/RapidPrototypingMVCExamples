@@ -1,0 +1,23 @@
+﻿@using Prototyping.Ipsum
+@using Prototyping.Placeholdit
+@{
+    ViewBag.Title = "ExampleOne";
+}
+<div class="row">
+    <div class="twelve columns">
+        <h1>Example One</h1>
+        @{
+                //Paragraph of Ipsum text surrounded by <p> tags
+            @Html.Ipsum().p()
+                //Two words of Ipsum surrounded by an <h1> tag
+            @Html.Ipsum().h1()
+                //Configurable HTML example
+                //Paragraph with the attribute class="fancy"
+            @Html.Ipsum().p(htmlAttributes: new { @class = "fancy" })
+                //h2 tag, with the attribute data-special="true"
+            @Html.Ipsum().h2(5, new { data_special = "true" })	
+                //Method chaining with fluent api
+            @Html.Ipsum().h1().p().h2().p().h3().ol(10, 3, true)
+        }
+    </div>
+</div>

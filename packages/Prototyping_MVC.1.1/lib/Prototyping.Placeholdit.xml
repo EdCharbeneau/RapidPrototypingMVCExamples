@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Prototyping.Placeholdit</name>
+    </assembly>
+    <members>
+        <member name="M:Prototyping.Placeholdit.PlaceholditExtension.Placehold(System.Web.Mvc.HtmlHelper,System.Int32,System.Int32,System.String,System.String,System.String,System.Object,Prototyping.Placeholdit.ImgFormat)">
+            <summary>
+            Generates a placeholder image via the http://placehold.it web service
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="text"></param>
+            <param name="backgroundColor"></param>
+            <param name="textColor"></param>
+            <param name="format"></param>
+            <returns>Returns an HTML image element with the specified parameters</returns>
+        </member>
+    </members>
+</doc>

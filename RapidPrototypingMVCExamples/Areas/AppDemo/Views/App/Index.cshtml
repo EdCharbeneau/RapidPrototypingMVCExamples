@@ -1,0 +1,46 @@
+﻿@using Prototyping.Ipsum
+@using Prototyping.Placeholdit
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row show-on-phones">
+<h5>Filter:</h5>
+        <select id="mobileNav">
+            <option value="#">@Html.Ipsum().Words(2)</option>
+            <option value="#">@Html.Ipsum().Words(2)</option>
+            <option value="#">@Html.Ipsum().Words(2)</option>
+            <option value="#">@Html.Ipsum().Words(2)</option>
+            <option value="#">@Html.Ipsum().Words(2)</option>
+            <option value="#">@Html.Ipsum().Words(2)</option>
+            <option value="#">@Html.Ipsum().Words(2)</option>
+            <option value="#">@Html.Ipsum().Words(2)</option>
+        </select>
+    </div>
+<div class="row">
+    <div class="three columns hide-on-phones">
+        <h5>By Track</h5>
+        @Html.Ipsum().dl(links: true, dlAttributes: new { @class = "tabs vertical" })
+        <h5>By Day</h5>
+        @Html.Ipsum().dl(3, links: true, dlAttributes: new { @class = "tabs vertical" })
+    </div>
+    <div class="nine columns">
+        <h4>Sessions</h4>
+        @for (int i = 0; i < 5; i++)
+        {
+            <div class="row">
+                <div class="two columns phone-one">
+                    @Html.Placehold(150, 200, "Avatar")
+                </div>
+                <div class="seven columns phone-two">
+                    <h5><a href="@Url.Action("session")">@Html.Ipsum().Words(2)</a></h5>
+                    @Html.Ipsum().p()
+                <span>Start Time: 0:00</span>
+                </div>
+                <div class="three columns phone-one">
+                    <a href="@Url.Action("Session")" class="small blue radius nice button">RSVP for this session</a>
+                    <span>30 seats available</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>

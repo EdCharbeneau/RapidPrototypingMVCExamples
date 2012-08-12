@@ -1,0 +1,14 @@
+﻿@using Prototyping.Ipsum
+@using Prototyping.Placeholdit
+@{
+    ViewBag.Title = "ExampleTwo";
+}
+<div class="row">
+    <div class="twelve columns">
+        <h1>Example Two</h1>
+        @*An image 300w x 400h*@
+        @Html.Placehold(300, 400)
+        @*An image blue image with placeholder text*@
+        @Html.Placehold(300, 400, "image text", "003366")
+    </div>
+</div>

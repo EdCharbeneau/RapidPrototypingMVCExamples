@@ -1,0 +1,77 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+#mainMenu {
+    display: none; /* Hide by default, but show on desktop */
+}
+@media only screen and (min-width: 768px) {
+    #mainMenu {
+        display: block;
+    }
+}
+
+#menuToggle {
+display: block;
+background-color: #555;
+color: #fff;  
+line-height: 40px;  
+text-align: center;
+cursor: pointer;
+}
+
+    #menuToggle a {
+        color: white;
+    }
+
+
+#mainMenu .nav-bar {
+    margin-top: 0;
+    background-color: #555;
+}
+
+#mainMenu a.main {
+    color: #fff;
+}
+
+#mobileNav {
+    width: 100%;
+    font-size: 22px;
+}
+.container {
+    padding-top: 20px;
+}
+footer {
+    background-color: #DDD;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 989px) {
+    header h1 {
+        font-size: 22px;
+    }
+}
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
