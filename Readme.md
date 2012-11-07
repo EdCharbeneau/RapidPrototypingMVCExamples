@@ -6,5 +6,5 @@ A new repository is available for MVC 4 users at: [https://github.com/EdCharbene
 
 This repository contains all of the examples given in the article **Rapid prototyping, the MVC working model**.
 
-These examples were built using ASP.NET MVC, Prototyping for MVC 3 and Foundation Framework 2.2.
+These examples were built using ASP.NET MVC 3, Prototyping for MVC and Foundation Framework 2.2.
 
